@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+
+
+
+:root {
+    --dark-black: #000000;
+    --black: #242d49;
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --gray: rgba(36, 45, 73, 0.65);
+    --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+    --hrColor: #cfcdcd;
+    --cardColor: rgba(255, 255, 255, 0.64);
+    --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+    --inputColor: rgba(40, 52, 62, 0.07);
+    --photo: #4CB256;
+    --video: #4A4EB7;
+    --location: #EF5757;
+    --shedule: #E1AE4A;
+    --roboto-font: 'Roboto', sans-serif;
+    --popings-font: 'Poppins', sans-serif;
+    --footer-links-color: #cacaca;
+    --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif
+}
+
+
+.profile-page .profile-details-header {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile-page .profile-details-header .profile-details-container {
+    width: 100%;
+    display: flex;
+}
+
+.profile-page .profile-details-header .profile-details-container .profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.profile-page .profile-details-header .profile-details-container .profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details-container .profile-name-and-edite {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 80px;
+}
+
+.profile-details-container .profile-name-and-edite .user-name {
+    font-size: 1.3rem;
+    font-family: var(--system-font);
+    color: var(--dark-black);
+}
+
+.profile-details-container .profile-name-and-edite .button {
+  
+    margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    background-color: #efefef;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.profile-details-container .profile-name-and-edite .button .link{
+    text-decoration: none;
+    color: var(--dark-black);
+    text-transform: capitalize;
+    font-family: var(--system-font);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-details-container .follower-posts-followings {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.profile-details-container .follower-posts-followings span {
+    margin-right: 10px;
+}
+
+.profile-details-container .follower-posts-followings .total-followers {
+    font-family: var(--roboto-font);
+    font-size: 1rem;
+    color: var(--dark-black);
+
+}
+
+.profile-details-container .follower-posts-followings .total-followings {
+    font-family: var(--roboto-font);
+    font-size: 1rem;
+    color: var(--dark-black);
+    padding-left: 30px;
+
+}
+
+.profile-details-container .follower-posts-followings .total-posts {
+    font-family: var(--roboto-font);
+    font-size: 1rem;
+    color: var(--dark-black);
+    padding-left: 30px;
+
+}
+
+.profile-details-container .profile-name {
+    font-size: 1rem;
+    font-family: var(--system-font);
+    color: var(--dark-black);
+    margin-top: 30px;
+    margin-left: 80px;
+    font-weight: 600;
+}
+
+.profile-page .divider {
+    width: 90%;
+    margin: auto;
+    height: 1px;
+    background-color: rgb(240, 240, 240);
+    margin-top: 20px;
+}
+
+.profile-page .profilemenu-tabs {
+    width: 300px;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+}
+
+.profile-page .profilemenu-tabs .posts-tab {
+    font-size: 1rem;
+    font-family: var(--system-font);
+    color: var(--dark-black);
+    padding: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-page .profilemenu-tabs .posts-tab .posts-icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 3px;
+    color: #333;
+}
+
+.profile-page .user-posts .add-post {
+    width: 430px;
+    margin-left: 220px;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.profile-page .user-posts .add-post .icon-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid var(--dark-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-page .user-posts .add-post .icon-image .camera-icon {
+    width: 60px;
+    height: 60px;
+    color: #0000008b;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.profile-page .user-posts .add-post .icon-image input {
+    display: none;
+}
+
+.profile-page .user-posts .add-post .title {
+    padding-top: 20px;
+    font-size: 2rem;
+    font-family: var(--system-font);
+    font-weight: 800;
+    color: var(--dark-black);
+}
+
+.profile-page .user-posts .add-post .message {
+    padding: 4px;
+    font-size: 0.9rem;
+    font-family: var(--popings-font);
+    color: var(--black);
+    padding-top: 15px;
+}
+
+
+/* create post popup box designing */
+.post{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 111;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.post .close-icon{
+    float: right;
+    padding-right: 60px;
+    padding-top: 20px;
+    width: 35px;
+    height: 35px;
+    z-index: 1111;
+    cursor: pointer;
+}
+#close-popup{
+    display: none;
+}
+.createPost-popup {
+    width: 320px;
+    height: 300px;
+    padding: 20px 30px 60px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.createPost-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.createPost-wrapper .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.createPost-wrapper .header .exit{
+    z-index: 111;
+}
+.createPost-wrapper .header .exit .icon{
+    z-index: 111;
+    cursor: pointer;
+    color: var(--dark-black);
+}
+.createPost-wrapper .header .previous .icon{
+    cursor: pointer;
+    color: var(--dark-black);
+}
+.createPost-wrapper .header .heading {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dark-black);
+    font-family: var(--roboto-font);
+    margin-right: 20px;
+   font-weight: 500;
+    
+}
+.createPost-wrapper .header  .next{
+    font-size: 1rem;
+    font-family: var(--system-font);
+    color: #0095f6;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 111;
+}
+
+.process-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.createPost-wrapper .process-container .select-image-process .createPost-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+}
+.createPost-wrapper .createPost-content .choosed-image{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+.createPost-wrapper .createPost-content .choosed-image img{
+    width: 100%;
+    height: 100%;
+}
+.createPost-wrapper .createPost-content .icons .icon {
+    width: 45px;
+    height: 45px;
+    color: gray;
+}
+
+.createPost-wrapper .createPost-content .icons .icon:nth-child(2) {
+    margin-left: -20px;
+    transform: rotate(10deg);
+}
+
+.createPost-wrapper .createPost-content .createPost-title {
+    font-size: 1.1rem;
+    color: var(--dark-black);
+    font-family: var(--system-font);
+    padding-top: 20px;
+}
+
+.createPost-wrapper .createPost-content button ,label {
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #0095f6;
+    margin-top: 24px;
+    border: none;
+    color: #fff;
+    font-family: var(--system-font);
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.createPost-wrapper .createPost-content button input{
+    display: none;
+}
+
+/* desinge for the fill details */
+.createPost-wrapper .process-container .fill-details-process{
+    width: 100%;
+    padding-top: 30px;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group textarea{
+    width: 100%;
+    height: 120px;
+    border: none;
+    outline: none;
+    font-family: var(--system-font);
+    font-size: 1rem;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group textarea::placeholder{
+    text-transform: capitalize;
+    font-family: var(--popings-font);
+    font-size: 1rem;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group input{
+   width: 100%;
+   height: 45px;
+   border: none;
+   outline: none;
+   padding-left: 12px;
+   font-family: var(--system-font);
+   font-size: 1rem;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   box-sizing: border-box;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group input::placeholder{
+    text-transform: capitalize;
+    font-family: var(--popings-font);
+    font-size: 1rem;
+}
+.createPost-wrapper .process-container .fill-details-process .share-btn button{
+    color: #0095f6;
+    font-family: var(--system-font);
+    font-size: 1.2rem;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 20px;
+
+}
+
+
+/* user posts card stylings  */
+.user-posts{
+   width: 100%;
+    height: 80vh;
+   
+}
+
+ .user-posts .all-posts-container{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+   
+}
+
+/* my posts cards designing ------------------------------- */
+
+.myPost-image{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 12px;
+    position: relative;
+}
+
+.myPost-image .myPost-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+.myPost-image:hover .myPost-layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 111;
+}
+.myPost-image img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer !important;
+}
+.mypost-card{
+    max-width: 550px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: context-menu;
+    
+    margin-top: 20px;
+}
+.mypost-card .mycard-header{
+    width: 100%;
+   
+}
+.mypost-card .mycard-header .myprofile-picture img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.mypost-card .mycard-header .myusername{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--system-font);
+    color: var(--dark-black);
+}
+.mypost-card .myposted-image {
+    width:90%;
+   
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mypost-card .myposted-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.mypost-card .mypostcard-footer .mycaption{
+    padding-top: 10px;
+    font-family: var(--popings-font);
+    font-weight: 400;
+    color: var(--dark-black);
+    font-size: 0.9rem;
+    
+    
+}

@@ -1,0 +1,428 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+
+
+
+:root{
+    --dark-black:#000000;
+    --black: #242d49;
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --gray: rgba(36, 45, 73, 0.65);
+    --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+    --hrColor: #cfcdcd;
+    --cardColor: rgba(255, 255, 255, 0.64);
+    --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+    --inputColor: rgba(40, 52, 62, 0.07);
+    --photo: #4CB256;
+    --video: #4A4EB7;
+    --location: #EF5757;
+  --shedule: #E1AE4A;
+  --roboto-font:'Roboto', sans-serif;
+  --popings-font:'Poppins', sans-serif;
+  --footer-links-color:#cacaca;
+  --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif
+}
+
+/* create post popup box designing */
+.post{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 111;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.post .close-icon{
+    float: right;
+    padding-right: 60px;
+    padding-top: 20px;
+    width: 35px;
+    height: 35px;
+    z-index: 1111;
+    cursor: pointer;
+}
+#close-popup{
+    display: none;
+}
+.createPost-popup {
+    width: 320px;
+    height: 300px;
+    padding: 20px 30px 60px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.createPost-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.createPost-wrapper .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.createPost-wrapper .header .exit{
+    z-index: 111;
+}
+.createPost-wrapper .header .exit .icon{
+    z-index: 111;
+    cursor: pointer;
+    color: var(--dark-black);
+}
+.createPost-wrapper .header .previous .icon{
+    cursor: pointer;
+    color: var(--dark-black);
+}
+.createPost-wrapper .header .heading {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dark-black);
+    font-family: var(--roboto-font);
+   
+   font-weight: 500;
+    
+}
+.createPost-wrapper .header  .next{
+    font-size: 1rem;
+    font-family: var(--system-font);
+    color: #0095f6;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 111;
+}
+
+.createPost-wrapper .header  .success-mssg{
+    font-family: var(--popings-font);
+    font-weight: 500;
+    color: var(--dark-black);
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.process-container {
+    width: 100%;
+    overflow: hidden;
+   
+}
+
+.createPost-wrapper .process-container .select-image-process .createPost-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+}
+.createPost-wrapper .createPost-content .choosed-image{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+.createPost-wrapper .createPost-content .choosed-image img{
+    width: 100%;
+    height: 100%;
+}
+.createPost-wrapper .createPost-content .icons .icon {
+    width: 45px;
+    height: 45px;
+    color: gray;
+}
+
+.createPost-wrapper .createPost-content .icons .icon:nth-child(2) {
+    margin-left: -20px;
+    transform: rotate(10deg);
+}
+
+.createPost-wrapper .createPost-content .createPost-title {
+    font-size: 1.1rem;
+    color: var(--dark-black);
+    font-family: var(--system-font);
+    padding-top: 20px;
+}
+
+.createPost-wrapper .createPost-content button ,label {
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #0095f6;
+    margin-top: 24px;
+    border: none;
+    color: #fff;
+    font-family: var(--system-font);
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.createPost-wrapper .createPost-content button input{
+    display: none;
+}
+
+/* desinge for the fill details */
+.createPost-wrapper .process-container .fill-details-process{
+    width: 100%;
+    padding-top: 30px;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group textarea{
+    width: 100%;
+    height: 120px;
+    border: none;
+    outline: none;
+    font-family: var(--system-font);
+    font-size: 1rem;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group textarea::placeholder{
+    text-transform: capitalize;
+    font-family: var(--popings-font);
+    font-size: 1rem;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group input{
+   width: 100%;
+   height: 45px;
+   border: none;
+   outline: none;
+   padding-left: 12px;
+   font-family: var(--system-font);
+   font-size: 1rem;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   box-sizing: border-box;
+}
+.createPost-wrapper .process-container .fill-details-process .form-group input::placeholder{
+    text-transform: capitalize;
+    font-family: var(--popings-font);
+    font-size: 1rem;
+}
+.createPost-wrapper .process-container .fill-details-process .share-btn button{
+    color: #0095f6;
+    font-family: var(--system-font);
+    font-size: 1.2rem;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 20px;
+
+}
+
+
+.postIsSuccessfull-card{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+.postIsSuccessfull-card .success-animation{
+    width: 100%;
+    height: 40%;
+   
+}
+/* .postIsSuccessfull-card .round{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: auto;
+   
+} */
+/* .postIsSuccessfull-card .round .fa-check{
+    font-size: 50px;
+    color:#0095f6;
+} */
+.postIsSuccessfull-card .mssg{
+    padding-top:10px;
+    font-family: var(--system-font);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+
+/**
+ * Extracted from: SweetAlert
+ * Modified by: Istiak Tridip
+ */
+ .success-checkmark {
+    width: 80px;
+    height: 115px;
+    margin: 0 auto;
+ }
+    
+    .check-icon {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: 4px solid var(--black);
+    }
+        
+    .check-ico::before {
+            top: 3px;
+            left: -2px;
+            width: 30px;
+            transform-origin: 100% 50%;
+            border-radius: 100px 0 0 100px;
+        }
+        
+        /* .check-icon::after {
+            top: 0;
+            left: 30px;
+            width: 60px;
+            transform-origin: 0 50%;
+            border-radius: 0 100px 100px 0;
+            animation: rotate-circle 4.25s ease-in;
+        } */
+        
+        /* .check-ico::before,   .check-ico::after {
+            content: '';
+            height: 100px;
+            position: absolute;
+            background: #FFFFFF;
+            transform: rotate(-45deg);
+        }
+         */
+        .icon-line {
+            height: 5px;
+            background-image: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 10;
+        }
+            .line-tip {
+                top: 46px;
+                left: 14px;
+                width: 25px;
+                transform: rotate(45deg);
+                animation: icon-line-tip 0.75s;
+            }
+            
+            .line-long {
+                top: 38px;
+                right: 8px;
+                width: 47px;
+                transform: rotate(-45deg);
+                animation: icon-line-long 0.75s;
+            }
+        
+        
+        .icon-circle {
+            top: -4px;
+            left: -4px;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: content-box;
+           
+        }
+        
+        .icon-fix {
+            top: 8px;
+            width: 5px;
+            left: 26px;
+            z-index: 1;
+            height: 85px;
+            position: absolute;
+            transform: rotate(-45deg);
+            background-color: #FFFFFF;
+        }
+
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(-45deg);
+    }
+    5% {
+        transform: rotate(-45deg);
+    }
+    12% {
+        transform: rotate(-405deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+    }
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    84% {
+        width: 55px;
+        right: 0px;
+        top: 35px;
+    }
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+    }
+}

@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+
+
+
+:root{
+    --dark-black:#000000;
+    --black: #242d49;
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --gray: rgba(36, 45, 73, 0.65);
+    --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+    --hrColor: #cfcdcd;
+    --cardColor: rgba(255, 255, 255, 0.64);
+    --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+    --inputColor: rgba(40, 52, 62, 0.07);
+    --photo: #4CB256;
+    --video: #4A4EB7;
+    --location: #EF5757;
+  --shedule: #E1AE4A;
+  --roboto-font:'Roboto', sans-serif;
+  --popings-font:'Poppins', sans-serif;
+  --footer-links-color:#cacaca;
+  --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif
+}
+
+.update-profile-header{
+    width: 90%;
+    margin: auto;
+  
+}
+.update-profile-header .heading{
+    font-size: 1.3rem;
+    font-family: var(--roboto-font);
+    color: var(--dark-black);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.update-profile-container {
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 30px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.update-profile-container .heading{
+    font-family: var(--popings-font);
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 300;
+}
+.update-profile-container .forms{
+    padding: 20px;
+}
+.update-profile-container .forms .edite-image{
+    display: flex;
+    align-items: center;
+}
+.update-profile-container .forms .edite-image .label img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.update-profile-container .forms .edite-image .input{
+    margin-left: 40px;
+}
+.update-profile-container .forms .edite-image .input .username{
+    font-family: var(--system-font);
+    font-size: 1rem;
+    color: var(--dark-black);
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.update-profile-container .forms .edite-image .input label{
+    font-size: 1rem;
+    font-family: var(--roboto-font);
+    text-transform: capitalize;
+    color: var(--location);
+    font-weight: 600;
+    cursor: pointer;
+}
+.update-profile-container .forms .edite-image .input input{
+    display: none;
+}
+.update-profile-container .forms  .form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.update-profile-container .forms  .form-group .label{
+    font-size: 1.1rem;
+    font-family: var(--system-font);
+    color: var(--dark-black);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.update-profile-container .forms  .form-group input{
+    width: 300px;
+    height: 35px;
+    margin-left: 30px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    font-family: var(--popings-font);
+    font-size: 1rem;
+    outline: none;
+}
+.update-profile-container .forms  .form-group textarea{
+    height: 60px;
+    width: 300px;
+    margin-left: 85px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-family: var(--popings-font);
+    font-size: 1rem;
+    outline: none;
+}
+.update-profile-container .forms .button button{
+    width:80px;
+    height: 40px;
+    border-radius:5px;
+    background-color: #0095f6;
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-family: var(--system-font);
+}
+.update-profile-container .forms .button .disabled{
+    background-color: #0094f696;
+    cursor: not-allowed;
+}

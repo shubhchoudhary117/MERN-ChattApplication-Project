@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.dashboard{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.dashboard .sidebar{
+    flex: 3;
+    max-width: 280px;
+
+}
+.dynamic-components{
+    flex: 7;
+}

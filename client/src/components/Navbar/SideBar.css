@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+:root {
+    --black: #242d49;
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --gray: rgba(36, 45, 73, 0.65);
+    --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+    --hrColor: #cfcdcd;
+    --cardColor: rgba(255, 255, 255, 0.64);
+    --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+    --inputColor: rgba(40, 52, 62, 0.07);
+    --photo: #4CB256;
+    --video: #4A4EB7;
+    --location: #EF5757;
+    --shedule: #E1AE4A;
+    --roboto-font: 'Roboto', sans-serif;
+    --popings-font: 'Poppins', sans-serif;
+    --olea-font:'Oleo Script', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar-container{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding-top: 20px;
+}
+
+header {
+    width: 90%;
+  
+}
+header .heading{
+    font-size: 1.6rem;
+    font-family: var(--olea-font);
+    margin-left: 5px;
+}
+.sidebar-container nav{
+    width: 100%;
+    margin-top: 40px;
+}
+.sidebar-container nav .menus ul{
+    list-style: none;
+}
+.sidebar-container nav .menus li{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.sidebar-container nav .menus li .icon{
+    margin-right: 10px;
+}
+.sidebar-container nav .menus li .icon.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar-container nav .menus li .link.link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: var(--roboto-font);
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 300;
+}
+
+.sidebar-container nav .menus li .image
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.sidebar-container nav .menus li .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* logout card designing  */
+.logout-card{
+    width: 300px;
+    height: 110px;
+    padding: 12px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 222;
+    border-radius: 15px;
+    display: none;
+    transition: ease all 0.05s;
+}
+
+.logout-card .header .logout-title{
+    font-size: 1.1rem;
+    font-family: var(--popings-font);
+    text-transform:capitalize ;
+    padding: 12px;
+}
+.logout-card .header .logout-subtitle{
+    font-size: 0.7rem;
+    font-family: var(--roboto-font);
+    text-transform: capitalize;
+    color: #737373;
+}
+.logout-card .divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(240, 240, 240);
+    margin-top: 20px;
+}
+.logout-card .login-btn{
+    padding: 5px;
+    font-family: var(--roboto-font);
+    text-transform: capitalize;
+    cursor: pointer;
+}

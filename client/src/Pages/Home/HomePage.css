@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+
+
+
+:root{
+    --dark-black:#000000;
+    --black: #242d49;
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --gray: rgba(36, 45, 73, 0.65);
+    --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+    --hrColor: #cfcdcd;
+    --cardColor: rgba(255, 255, 255, 0.64);
+    --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+    --inputColor: rgba(40, 52, 62, 0.07);
+    --photo: #4CB256;
+    --video: #4A4EB7;
+    --location: #EF5757;
+  --shedule: #E1AE4A;
+  --roboto-font:'Roboto', sans-serif;
+  --popings-font:'Poppins', sans-serif;
+  --footer-links-color:#cacaca;
+  --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif
+}
+
+.page-loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.error-toast{
+    color: #fff;
+    font-family: var(--popings-font);
+    text-transform: capitalize;
+    font-family: 1rem;
+    
+}
+
+.home-post-section{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+.posts{
+    flex: 5;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.posts-welcome-box{
+    width:350px ;
+    text-align: center;
+    margin: auto;
+}
+.posts-welcome-box .coustom-image{
+    width: 100px;
+    height: 100px;
+    border: 1.2px solid var(--black);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.posts-welcome-box .coustom-image .fa-check{
+    font-size: 60px;
+    
+    color: var(--location);
+}
+.posts-welcome-box  .title{
+    font-family: var(--popings-font);
+    font-weight: 400;
+    padding-top: 12px;
+    font-size: 1.4rem;
+}
+.posts-welcome-box  .sub-title{
+    font-size: 0.9rem;
+    font-family: var(--popings-font);
+    font-weight: 300;
+    color: #737373;
+}
+/* for desinig the post */
+.posts-wrapper{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+.posts-wrapper .loader{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    color: var(--location);
+   border-color: var(--location);
+
+}
+.posts-wrapper{
+    height: 85vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+}
+
+
+.posts-wrapper::-webkit-scrollbar{
+    display: none;
+    cursor: pointer;
+}
+
+
+/* suggested users template desinge */
+
+.right-part{
+    flex: 1.7;
+    max-width: 350px;
+    margin-left: 10px;
+    padding-top: 10px;
+    
+}
+
+ .user-profile .profile-detail{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+ .user-profile .profile-detail .img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+ .user-profile .profile-detail .profile-name{
+    font-family: var(--system-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 10px;
+   z-index:11;
+}
+
+.suggested-users{
+   width: 100%;
+}
+.suggested-users .suggested-users-wrapper{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.suggested-users .suggested-users-wrapper .header {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.suggested-users .suggested-users-wrapper .header .heading{
+    font-size: 1.2rem;
+    color: rgb(115,115,115);
+    text-transform: capitalize;
+    font-family: var(--system-font);
+}
+.suggested-users .suggested-users-wrapper .header .see-all .link{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--system-font);
+    color: var(--dark-black);
+    font-weight: 500;
+    text-transform: capitalize;
+    z-index: 111;
+}
+.suggested-users .suggested-users-wrapper .users-list{
+    margin-top: 20px;
+    overflow-y: scroll;
+  
+}
+.suggested-users .suggested-users-wrapper .users-list::-webkit-scrollbar{
+    display: none;
+}
+
+.suggested-users .suggested-users-wrapper .users-list .follower{
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.suggested-users .suggested-users-wrapper .users-list .follower .follower-detail {
+    display: flex;
+    align-items: center;
+}
+.suggested-users .suggested-users-wrapper .users-list .follower .follower-detail img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.suggested-users .suggested-users-wrapper .users-list .follower-name {
+    font-size:1rem;
+    font-weight: 500;
+    color: #000000;
+    font-family: var(--system-font);
+}
+.suggested-users .suggested-users-wrapper .users-list .follower .follow-btn{
+    padding: 12px;
+    color: var(--location);
+    font-weight: 600;
+    font-family: var(--roboto-font);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* footer section  designing */
+.right-part .footer{
+    margin-top: 10px;
+    
+    padding: 10px;
+}
+.right-part .footer .links{
+    display: flex;
+    align-items: center;
+    font-family: var(--roboto-font);
+    color: var(--footer-links-color);
+}
+.right-part .footer .links div{
+    font-size: 0.9rem;
+    padding: 0px;
+    margin: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.right-part .footer .other-detail{
+    margin: 3px;
+    font-size: 0.9rem;
+    color: var(--footer-links-color);
+    font-family: var(--roboto-font);
+    text-transform: capitalize;
+}
+.right-part .footer  .web-name{
+    font-size: 0.9rem;
+    margin: 3px;
+    font-family: var(--roboto-font);
+    color: var(--footer-links-color);
+    padding-top: 5px;
+}
